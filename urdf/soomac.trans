@@ -1,56 +1,56 @@
 <?xml version="1.0" ?>
-<robot name="Soomac_prototype_v1" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+<robot name="soomac" xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
-<transmission name="회전 1_tran">
+<transmission name="Component2 to base_link_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="회전 1">
+  <joint name="Component2 to base_link">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="회전 1_actr">
+  <actuator name="Component2 to base_link_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="회전 2_tran">
+<transmission name="Component3 to Component2_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="회전 2">
+  <joint name="Component3 to Component2">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="회전 2_actr">
+  <actuator name="Component3 to Component2_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="회전 3_tran">
+<transmission name="Component4 to Component3_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="회전 3">
+  <joint name="Component4 to Component3">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="회전 3_actr">
+  <actuator name="Component4 to Component3_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="회전 4_tran">
+<transmission name="Component5 to Component4_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="회전 4">
+  <joint name="Component5 to Component4">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="회전 4_actr">
+  <actuator name="Component5 to Component4_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="회전 5_tran">
+<transmission name="Component6 to Component5_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="회전 5">
+  <joint name="Component6 to Component5">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="회전 5_actr">
+  <actuator name="Component6 to Component5_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>

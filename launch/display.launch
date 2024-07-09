@@ -1,5 +1,5 @@
 <launch>
-  <arg name="model" default="$(find soomac_description)/urdf/Soomac_prototype_v1.xacro"/>
+  <arg name="model" default="$(find soomac_description)/urdf/soomac.xacro"/>
   <arg name="gui" default="true"/>
   <arg name="rvizconfig" default="$(find soomac_description)/launch/urdf.rviz"/>
   <param name="robot_description" command="$(find xacro)/xacro $(arg model)"/>

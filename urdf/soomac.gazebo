@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<robot name="Soomac_prototype_v1" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+<robot name="soomac" xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
 <xacro:property name="body_color" value="Gazebo/Silver" />
 
@@ -14,14 +14,7 @@
   <gravity>true</gravity>
 </gazebo>
 
-<gazebo reference="Component6_1">
-  <material>${body_color}</material>
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <selfCollide>true</selfCollide>
-</gazebo>
-
-<gazebo reference="Component5_1">
+<gazebo reference="Component2_1">
   <material>${body_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
@@ -42,7 +35,14 @@
   <selfCollide>true</selfCollide>
 </gazebo>
 
-<gazebo reference="Component2_1">
+<gazebo reference="Component5_1">
+  <material>${body_color}</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="Component6_1">
   <material>${body_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
